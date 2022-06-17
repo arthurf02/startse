@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,500&display=swap');
+*{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    --webkit--font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+    font-weight: 500;
+}
+
+main, main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*menu design*/
+header{
+    background-color: #022684;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 930px;
+    margin: auto;
+}
+
+header img{
+    height: 80px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+nav{
+    display: flex;
+    padding-right: 15px;
+    padding-bottom: 13px;
+}
+
+nav a{
+    transition: 100ms linear;
+}
+nav a:hover{
+    transform: translateY(-3px);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*newsletter*/
+.newsletter{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    width: 100%;
+}
+
+.newsletter input{
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #C31E2E;
+    border-radius: 13px;
+}
+
+.newsletter #buttom{
+    background-color: #C31E2E;
+    color: white;
+    text-transform: uppercase;
+    transition: 100ms linear;
+}
+
+.newsletter #buttom:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.newsletter img{
+    height: 300px;
+}
+
+/*news cards*/
+.card-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: min-content;
+    margin: 10px;
+    padding: 10px;
+    border: 2px #C31E2E solid;
+    border-radius: 13px;
+    transition: 150ms linear;
+}
+.card:hover{
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+
+.card figure{
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 5px #022684;
+}
+.card:nth-child(even) figure{
+    box-shadow: 5px 5px 5px #C31E2E;
+}
+.card img{
+    height: 180px;
+}
+
+.card:nth-child(odd){
+    border: 2px solid #022684;
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+/*suggestions form*/
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#form-text{
+    font-size:x-large;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#form-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 400px;
+    border: 2px solid #C31E2E;
+    border-radius: 13px;
+}
+#form-card form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#form-card input, #form-card textarea{
+    width: 70%;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #022684;
+    border-radius: 13px;
+    font-family: inherit;
+}
+
+#form-card #message{
+    height: 100px;
+}
+
+#form-card #buttom2{
+    background-color: #022684;
+    color: white;
+    text-transform: uppercase;
+    transition: 100ms linear;
+}
+
+#form-card #buttom2:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    background-color: #022684;
+    padding-top: 10px;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+footer address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    padding: 10px;
+    transition: 100ms linear;
+}
+footer img{
+    height: 30px;
+}
+
+footer a:hover{
+    transform: translateY(-3px);
+}

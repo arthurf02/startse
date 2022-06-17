@@ -1,0 +1,41 @@
+@media screen and (max-width: 1150px) {
+    .newsletter{
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-top: 120px;
+        margin-bottom: 80px;
+        justify-content: center;
+    }
+    .newsletter img{
+        display: none;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        width: fit-content;
+    }
+    .card{
+        height: 95%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form{
+        flex-direction: column;
+    }
+    #form-text{
+        margin-right: 0;
+    }
+    #form-card{
+        width: 90%;
+        height: 50%;
+        margin-top: 50px;
+    }
+}
