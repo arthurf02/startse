@@ -24,6 +24,7 @@
 @media screen and (max-width: 800px) {
     .newsletter div {
         width: 90%;
+        font-size: x-large;
     }
     .card-container{
         display: flex;
